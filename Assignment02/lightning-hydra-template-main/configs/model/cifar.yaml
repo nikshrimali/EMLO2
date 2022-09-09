@@ -13,3 +13,6 @@ net:
   lin2_size: 128
   lin3_size: 64
   output_size: 10
+
+model_name:
+  _target_: resnet18

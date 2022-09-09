@@ -1,5 +1,5 @@
 from typing import Any, List
-
+import timm
 import torch
 from pytorch_lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric

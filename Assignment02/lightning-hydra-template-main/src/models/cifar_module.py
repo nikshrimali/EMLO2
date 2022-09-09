@@ -24,7 +24,7 @@ class CIFARLitModule(LightningModule):
     def __init__(
         self,
         net: torch.nn.Module,
-        model_name:model
+        model_name:'resnet18',
         optimizer: torch.optim.Optimizer,
     ):
         super().__init__()
@@ -34,7 +34,7 @@ class CIFARLitModule(LightningModule):
         self.save_hyperparameters(logger=False, ignore=["net"])
 
         #self.net = net
-        self.net = timm.create_model(resnet18, pretrained=False)
+        self.net = timm.create_model(model_name, pretrained=False)
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()

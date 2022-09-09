@@ -1,3 +1,5 @@
+** For testing of my code changes, following commands were executed in the Google Colab
+
 - !git clone https://github.com/atulgupta01/EMLO
 - !mv ./EMLO/Assignment02/lightning-hydra-template-main ./
 - !mv lightning-hydra-template-main lightning-hydra-template

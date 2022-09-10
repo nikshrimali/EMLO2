@@ -20,4 +20,4 @@ COPY . .
 # tell the port number the container should expose
 EXPOSE 5000
 
-ENTRYPOINT ["supervisord"]
+ENTRYPOINT ["python", "./src/train.py"]

@@ -10,6 +10,8 @@
   - !python ./lightning-hydra-template/src/eval.py ckpt_path="<Path from the training>"
  
 ### EMLO_Assignment02.ipynb is uploaded in this repository
-### To Create Docker run - <b>make setup</b>
-### for training - <b>make train</b>
-### for eval - <b>make eval</b>
+### To Create Docker run - <b>make build IMAGE_NAME=<image_name></b>
+### for training - <b>docker run assignment02 python src/train.py experiment=cifar_example</b>
+    (That is why I ketp "copy . ." in Dockerfile).
+### for eval - <b>docker run assignment02 python src/eval.py</b>
+### Training and Evaluation can also be performed using <b>make train/eval</b> 

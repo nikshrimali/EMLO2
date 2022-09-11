@@ -1,9 +1,17 @@
-setup:
-	docker build --tag assignment02:latest .
-	docker run assignment02:latest
+build:
+	docker build --tag ${IMAGE_NAME} .
 
 train:
-	docker run assignment02:latest python ./src/train.py experiment=example.yaml
+	python ./src/train.py
 
 eval:
-	docker run assignment02:latest python ./src/eval.py ckpt_path=""
+	python ./src/eval.py
+
+test:
+	pytest -k "not slow"
+
+test-full:
+	pytest
+
+mount:
+	docker run -it -v `pwd`:/workspace/project ${IMAGE_NAME}

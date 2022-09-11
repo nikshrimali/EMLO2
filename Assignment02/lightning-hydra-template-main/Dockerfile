@@ -2,7 +2,7 @@
 FROM python:3.8-slim
 
 # create workdirectory
-WORKDIR /app
+WORKDIR /workspace/project
 
 # copy our requirements
 COPY requirements.txt requirements.txt
@@ -13,8 +13,3 @@ RUN pip3 install -r requirements.txt
 
 # copy this folder contents to image
 COPY . .
-
-# tell the port number the container should expose
-EXPOSE 5000
-
-ENTRYPOINT ["python", "./src/train.py"]

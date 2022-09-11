@@ -14,4 +14,8 @@ net:
   lin3_size: 64
   output_size: 10
 
-model_name: resnet18
+timm_net:
+    _target_: timm.create_model
+    model_name: resnet18
+    pretrained: True
+    num_classes: 10

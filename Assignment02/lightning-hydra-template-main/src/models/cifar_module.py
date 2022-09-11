@@ -35,7 +35,7 @@ class CIFARLitModule(LightningModule):
 
         #self.net = net
         self.net = timm_net
-        model.eval()
+        #model.eval()
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()

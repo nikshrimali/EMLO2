@@ -15,6 +15,6 @@ seed: 12345
 
 model:
     timm_net:
-        model_name: resnet18
+        model_name: vit_base_patch16_224
         pretrained: True
         num_classes: 10

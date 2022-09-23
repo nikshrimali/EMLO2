@@ -6,7 +6,8 @@
 
 2. Do a Hyperparam sweep for CIFAR10 dataset with resnet18 from timm
 
-- Please refer to https://github.com/atulgupta01/EMLO/blob/main/Assignment03/optimization_results.yaml
+- Please refer to https://github.com/atulgupta01/EMLO/blob/main/Assignment03
+- Best Results are stored at https://github.com/atulgupta01/EMLO/blob/main/Assignment03/optimization_results.yaml
 
 3. Push model, logs and data to google drive (using dvc)
 
@@ -21,7 +22,9 @@ Jupyter Notebook
 https://colab.research.google.com/drive/1Ro7kyrM8gBb_5lLhfjT_q12rg6PGHmUr?usp=sharing
 - Same file is uploaded in github location as well. Path - https://github.com/atulgupta01/EMLO/blob/main/Assignment03/EMLO_Assignmen03.ipynb
 
-** Please note that I did not create pipeline for DVC. Rather I did those things manually in jupyter notebook.**
+- Please note that I did not create pipeline for DVC. Rather I did those things manually in jupyter notebook.
+- Github is not setup properly for me and hence used "dvc init --no-scm". 
+- All the files for DVC are stored in the google drive and I was able to restore those as well.
 
 5. Upload Tensorboard logs to (https://tensorboard.dev/) and share link to the tensorboard.dev 
 

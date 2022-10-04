@@ -1,0 +1,21 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: cifar.yaml
+  - override /model: cifar.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+  - override /logger: tensorboard.yaml
+
+tags: ["cifar"]
+
+seed: 12345
+
+model:
+    timm_net:
+        model_name: resnet18
+        pretrained: True
+        num_classes: 10

@@ -1,4 +1,5 @@
 import pyrootutils
+import torch
 
 root = pyrootutils.setup_root(
     search_from=__file__,

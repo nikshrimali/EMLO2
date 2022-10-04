@@ -22,3 +22,4 @@ rich            # beautiful text formatting in terminal
 pytest          # tests
 timm==0.6.7     # for models
 # sh            # for running bash commands in some tests (linux/macos only)
+gradio          # for the demo

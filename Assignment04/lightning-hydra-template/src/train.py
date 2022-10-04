@@ -98,6 +98,7 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
     train_metrics = trainer.callback_metrics
     
     log.info("Scripting Model....")
+    scripted_model = model.to_torchscript(method="script")
     torch.jit.save(scripted_model, f"{cfg.paths.output_dir}/model.script.pt")
     log.info("Saving Model.... to {cfg.paths.output_dir}/model.script.pt")
     

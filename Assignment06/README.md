@@ -1,5 +1,5 @@
 **Model: timm.create_model("vit_base_patch32_224", pretrained=True)**
-- complete. Required small change in cifar_datamodule.py - transforms.RandomResizedCrop(224) to convert size from 32*32 to 224*224
+- complete. Required small change in cifar_datamodule.py - transforms.RandomResizedCrop(224) to convert size from 32X32 to 224X224
 
 
 **Dataset: CIFAR10**

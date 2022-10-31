@@ -43,3 +43,12 @@ location of the log folder - https://github.com/atulgupta01/EMLO/tree/main/Assig
 
 **Upload Tensorboard logs to Tensorboard.dev and add link to it**
 - Complete - https://tensorboard.dev/experiment/DILuXqGGT2eqoWSL3bKKEw/#scalars
+
+
+** Some Important Things for personal reference **
+
+MASTER_PORT=29500 MASTER_ADDR=172.31.13.222 WORLD_SIZE=2 NODE_RANK=0 python src/train.py trainer=ddp trainer.devices=1 trainer.num_nodes=2 logger=tensorboard trainer.default_root_dir=$(date + '%Y-%m-%d_%H_%M_%S') callbacks.model_checkpoint.dirpath=logs/train/runs
+
+tensorboard dev upload --logdir ./logs/tensorboard --name "DDP Multinode with CIFAR" --description "Training results from EMLO Assignment06 DDP" --one_shot
+
+aws s3 cp ./logs/* s3://emlo/assignment06/ddp/*

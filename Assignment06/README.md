@@ -10,14 +10,17 @@
 - Complete - changed setting to run 25 epochs
 
 **Train ViT Base using FSDP (4 GPU)**
-- Could not get any machine with multiple GPU. Also could not get multiple machines for this experiment
+- Could not get any machine with multiple GPU. Also could not get multiple spot machines for this experiment in last 2-3 days
 
 **Train ViT Base using DDP (4 GPU x 2 Nodes)**
 - Complete
 
 **Use the highest batch_size possible for both strategies**
-- Complete - tried multiple batches and highest batchsize achieved is 256
-- could not store all the experiments. I lost spot images 2 times and log has data only for the final experiment
+- Complete
+- Experimented with batch sizes 128m 192, 256 and 512. 
+- It failed for 512
+- So, maximum batch size achieved is 256
+- could not store all the experiments. I lost spot instances 2 times and log has data only for the final experiment
 
 **Store the best checkpoint of both to AWS S3**
 - Complete - location - s3://emlo/assignment06/
@@ -35,8 +38,8 @@ location of the log folder - https://github.com/atulgupta01/EMLO/tree/main/Assig
 - Complete
 
 **Add the maximum batch_size number you were able to achieve**
-- Complete - tried multiple batches and highest batchsize achieved is 256
-- could not store all the experiments. I lost spot images 2 times and log has data only for the final experiment
+- Complete - tried multiple batche sizes and highest batch size achieved is 256
+- could not store all the experiments. I lost spot instances 2 times and log has data only for the final experiment
 
 **Upload Tensorboard logs to Tensorboard.dev and add link to it**
 - Complete - https://tensorboard.dev/experiment/DILuXqGGT2eqoWSL3bKKEw/#scalars

@@ -12,10 +12,10 @@ from timm.data.transforms_factory import create_transform
 
 def main():
 
-    parser = argparse.ArgumentParser(description="")
+    # parser = argparse.ArgumentParser(description="")
 
-    parser.add_argument("--model", dest="model", help="ss")
-    parser.add_argument("--image", dest="image", help="ss")
+    # parser.add_argument("--model", dest="model", help="ss")
+    # parser.add_argument("--image", dest="image", help="ss")
 
     model = timm.create_model('resnet18', pretrained=True)
     model.eval()

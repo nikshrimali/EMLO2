@@ -22,3 +22,5 @@ rich            # beautiful text formatting in terminal
 pytest          # tests
 timm==0.6.7     # for models
 # sh            # for running bash commands in some tests (linux/macos only)
+urllib3==1.26.12
+boto3==1.24.85	# To download model from S3

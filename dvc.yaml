@@ -1,0 +1,5 @@
+stages:
+  train-mnist:
+    cmd: python3 src/train.py experiment=mnist trainer.max_epochs=2
+    deps:
+      - data/MNIST

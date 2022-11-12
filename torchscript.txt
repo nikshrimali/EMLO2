@@ -1,0 +1,1 @@
+/home/ubuntu/EMLO2/logs/train/runs/2022-11-12_08-03-56/model.script.pt

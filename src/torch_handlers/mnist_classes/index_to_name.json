@@ -1,32 +1,32 @@
 {
 	"0": [
-		"zero"
+		"airplanes"
 	],
 	"1": [
-		"one"
+		"cars"
 	],
 	"2": [
-		"two"
+		"birds"
 	],
 	"3": [
-		"three"
+		"cats"
 	],
 	"4": [
-		"four"
+		"deer"
 	],
 	"5": [
-		"five"
+		"dogs"
 	],
 	"6": [
-		"six"
+		"frogs"
 	],
 	"7": [
-		"seven"
+		"horses"
 	],
 	"8": [
-		"eight"
+		"ships"
 	],
 	"9": [
-		"nine"
+		"trucks"
 	]
 }

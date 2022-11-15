@@ -7,7 +7,7 @@ from torchvision.datasets import CIFAR10
 from torchvision.transforms import transforms
 
 
-class CIFARDataModule(LightningDataModule):
+class CifarDataModule(LightningDataModule):
     """Example of LightningDataModule for MNIST dataset.
 
     A DataModule implements 5 key methods:

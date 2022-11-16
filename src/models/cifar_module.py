@@ -161,5 +161,5 @@ if __name__ == "__main__":
     import pyrootutils
 
     root = pyrootutils.setup_root(__file__, pythonpath=True)
-    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "mnist.yaml")
+    cfg = omegaconf.OmegaConf.load(root / "configs" / "model" / "cifar.yaml")
     _ = hydra.utils.instantiate(cfg)

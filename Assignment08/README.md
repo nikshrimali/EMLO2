@@ -43,7 +43,7 @@
   - Along with any files if needed
   - Run tests with pytest test_serve
   - This should run all your torchserve related test
-  **TBC**
+  **Complete** - https://github.com/atulgupta01/EMLO/blob/main/Assignment08/lightning-hydra-template/logs/total_output.txt
 
 **5. The parameter to the test functions should be your TorchServe Server Public IP and Model Name (as per your registered mar name)**
 - APIs of TorchServe will not be accessible over internet because it binds to 127.0.0.1 so only 127.0.0.1 can call APIs, to fix it bind to 0.0.0.0, now you can use the public IP of the instance to call APIs https://pytorch.org/serve/configuration.html#configure-torchserve-listening-address-and-portLinks to an external site. for inference API

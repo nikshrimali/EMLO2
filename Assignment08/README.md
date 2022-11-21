@@ -4,6 +4,7 @@
 
 **2. Deploy your model to TorchServe in an EC2 Instance/GitPod**
   - You have to use scripted model for creating your .mar file
+  
   **Complete**
  
  **3. Write PyTest script (test_serve_cifar.py) for**
@@ -20,6 +21,7 @@
   
   **2. testing gRPC API Inference**
     - Same thing as above, just do with gRPC
+  
     **Complete** 
       - Script - https://github.com/atulgupta01/EMLO/blob/main/Assignment08/lightning-hydra-template/test_serve/test_serve_cifar_grpc.py
       - output of the script - https://github.com/atulgupta01/EMLO/blob/main/Assignment08/lightning-hydra-template/logs/grpc_api_output.txt
@@ -29,6 +31,7 @@
     - Check if the Model Explanation Values Shape returned by Server is correct
     - Also Save the Model Explanations Image
     - Do for any 1 Image from CIFAR10
+    
     **Complete**
     - jupyter notebook - https://github.com/atulgupta01/EMLO/blob/main/Assignment08/lightning-hydra-template/notebooks/Test.ipynb
     - please refer to images - 
@@ -43,6 +46,7 @@
   - Along with any files if needed
   - Run tests with pytest test_serve
   - This should run all your torchserve related test
+  
   **Complete** - https://github.com/atulgupta01/EMLO/blob/main/Assignment08/lightning-hydra-template/logs/total_output.txt
 
 **5. The parameter to the test functions should be your TorchServe Server Public IP and Model Name (as per your registered mar name)**
@@ -56,7 +60,9 @@
   - Attach Model Explanation Image to it
   - Add Inference metrics (curl output of metrics api)
   - Upload Tensorboard Profiler to tensorboard.devLinks to an external site. and add link of it (this might not work, so instead just upload screenshots of the profiling page)
+  
   **Complete**
+  
   - log file - https://github.com/atulgupta01/EMLO/tree/main/Assignment08/lightning-hydra-template/pytorch_profiler
   ![alt text](https://github.com/atulgupta01/EMLO/blob/main/Assignment08/tensorboard_profiler.jpg)
     

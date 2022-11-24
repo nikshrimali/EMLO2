@@ -1,0 +1,16 @@
+service: serverless-mnist
+ 
+provider:
+  name: aws #cloud provider
+  region: ap-south-1 #region (mumbai)
+  memorySize: 10240 #memory usage
+  timeout: 300 
+ 
+functions:
+  mnist:
+    image: 006547668672.dkr.ecr.ap-south-1.amazonaws.com/mnist-serverless:latest 
+    events:
+      - http:
+          path: inference 
+          method: post 
+          cors: true

@@ -1,8 +1,6 @@
-# Extensive MLOps Research EMLO
+## Serverless
 
-Please checkout branches for different codes
+- Deploy CIFAR10 Model on AWS Lambda and share link to your Lambda
+- Deploy Frontend on Vercel and share link to your deployment
 
-## Branches created yet
--   ass1 - Docker and timm models
-- 02-hydra-lightening - Using hydra template deployed Timm model for CIFAR10 dataset
-- 03-version-control - Version controlling of code, model and data
+ 

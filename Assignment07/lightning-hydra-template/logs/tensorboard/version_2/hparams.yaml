@@ -1,0 +1,50 @@
+model:
+  _target_: src.models.cifar_module.CIFARLitModule
+  optimizer:
+    _target_: torch.optim.Adam
+    _partial_: true
+    lr: 0.001
+    weight_decay: 0.0
+  net:
+    _target_: src.models.components.simple_dense_net.SimpleDenseNet
+    input_size: 3072
+    lin1_size: 128
+    lin2_size: 128
+    lin3_size: 64
+    output_size: 10
+  timm_net:
+    _target_: timm.create_model
+    model_name: vit_base_patch32_224
+    pretrained: true
+    num_classes: 10
+model/params/total: 87462922
+model/params/trainable: 87462922
+model/params/non_trainable: 0
+datamodule:
+  _target_: src.datamodules.cifar_datamodule.CIFARDataModule
+  data_dir: /home/ubuntu/assignment06/lightning-hydra-template/data/
+  batch_size: 256
+  train_val_test_split:
+  - 45000
+  - 5000
+  - 10000
+  num_workers: 0
+  pin_memory: false
+trainer:
+  _target_: pytorch_lightning.Trainer
+  default_root_dir: /home/ubuntu/assignment06/lightning-hydra-template/logs/eval/runs/2022-10-29_11-55-08
+  min_epochs: 1
+  max_epochs: 25
+  accelerator: gpu
+  devices: 1
+  deterministic: false
+callbacks: null
+extras:
+  ignore_warnings: false
+  enforce_tags: true
+  print_config: true
+task_name: eval
+tags:
+- dev
+ckpt_path: /home/ubuntu/assignment06/lightning-hydra-template/logs/train/runs/epoch_023.ckpt
+seed: null

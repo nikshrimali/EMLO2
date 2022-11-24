@@ -1,0 +1,8 @@
+[supervisord]
+nodaemon=true
+
+[program:train]
+command=python ./src/train.py
+
+[program:eval]
+command=python ./src/train.py

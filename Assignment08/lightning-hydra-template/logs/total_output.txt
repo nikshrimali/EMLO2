@@ -1,0 +1,15 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.9.13, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/ubuntu/assignment08/lightning-hydra-template, configfile: pyproject.toml
+plugins: anyio-3.6.2, hydra-core-1.2.0
+collected 2 items
+
+test_serve/test_serve_cifar.py::TestFargateGradio::test_predict [32mPASSED[0m[32m   [ 50%][0m
+test_serve/test_serve_cifar_grpc.py::TestFargateGradio::test_predict [32mPASSED[0m[32m [100%][0m
+
+============================== slowest durations ===============================
+1.46s call     test_serve/test_serve_cifar_grpc.py::TestFargateGradio::test_predict
+0.20s call     test_serve/test_serve_cifar.py::TestFargateGradio::test_predict
+
+(4 durations < 0.005s hidden.  Use -vv to show these durations.)
+[32m============================== [32m[1m2 passed[0m[32m in 1.75s[0m[32m ===============================[0m

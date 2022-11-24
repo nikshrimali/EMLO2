@@ -1,5 +1,0 @@
-{
-	"base_url": "http://localhost:8080/predictions/mnist",
-	
-	"Image_path": "/home/ubuntu/assignment08/lightning-hydra-template/Images"
-}

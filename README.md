@@ -1,8 +1,19 @@
-# Extensive MLOps Research EMLO
+1. Run YOLOV7, YOLOV7-Tiny on your own video (30s) with Deepstream on Jetson Nano
+2. Save the video to a file and upload it to YouTube/LinkedIn
+  - submit the link of both yolov7 and yolov7-tiny
+3. Submit the FPS you were able to achieve
 
-Please checkout branches for different codes
+yolov7-tiny (FPS - 10.95)
+  https://www.youtube.com/watch?v=6f8CdVg6oHg
 
-## Branches created yet
--   ass1 - Docker and timm models
-- 02-hydra-lightening - Using hydra template deployed Timm model for CIFAR10 dataset
-- 03-version-control - Version controlling of code, model and data
+yolov7 (FPS - 10.9)
+  https://www.youtube.com/watch?v=vangHmmYxAE
+
+
+![jtop output](https://github.com/atulgupta01/EMLO/blob/main/Assignment10/output1.jpg)
+
+![Yolo output](https://github.com/atulgupta01/EMLO/blob/main/Assignment10/output2-yolov7.jpg)
+
+![Yolo tiny output](https://github.com/atulgupta01/EMLO/blob/main/Assignment10/output2-yolov7-tiny.jpg)
+
+

@@ -1,9 +1,0 @@
-name: optuna
-best_params:
-  model.optimizer._target_: torch.optim.SGD
-  model.optimizer.lr: 0.09514773349898396
-  datamodule.batch_size: 256
-  model.net.lin1_size: 256
-  model.net.lin2_size: 128
-  model.net.lin3_size: 32
-best_value: 0.8044000267982483

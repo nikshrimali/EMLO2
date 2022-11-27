@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 
 const CONFIG = {
-  "backend_url": "https://buo6tp1cx7.execute-api.ap-south-1.amazonaws.com/dev/inference"
+  "backend_url": "https://oei2n9nm4c.execute-api.ap-south-1.amazonaws.com/dev/inference"
 }
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
-          MNIST Inference on {' '}
+          CIFAR Inference on {' '}
           <a className="text-blue-600" href="https://nextjs.org">
             Serverless
           </a>
@@ -97,11 +97,11 @@ export default function Home() {
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
           className="flex items-center justify-center gap-2 text-xl"
-          href="https://theschoolofai.in/"
+          href="https://www.nikhilshrimali.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          EMLO 2.0 🤖 The School of AI
+          Developed with &#128512; By Nikhil Shrimali &#128526;
         </a>
       </footer>
     </div>

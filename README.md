@@ -1,5 +1,49 @@
 ## 08-Model Serving
 
+### Agenda
+
+-  Deploy your model to TorchServe in an EC2 Instance/GitPod - :white_check_mark:
+- You have to use scripted model for creating your .mar file - :white_check_mark:
+- Write PyTest script (test_serve_cifar.py) for testing REST API Inference Test if the inference output for 10 Images from CIFAR10 - :white_check_mark:
+    
+- Links to an external site.
+- Check if the classname is correct - :white_check_mark:
+- testing gRPC API Inference - 
+- testing captum model explanation
+- Check if the Model Explanation Values Shape returned by Server is correct
+- Also Save the Model Explanations Image 
+- Do for any 1 Image from CIFAR10
+
+
+- Create a folder test_serve - :white_check_mark:
+- Put all your tests inside that  - :white_check_mark:
+- Along with any files if needed - :white_check_mark:
+- Run tests with pytest test_serve - :white_check_mark:
+- This should run all your torchserve related test - :white_check_mark:
+
+- The parameter to the test functions should be your TorchServe Server Public IP and Model Name (as per your registered mar name)
+
+- APIs of TorchServe will not be accessible over internet because it binds to 127.0.0.1 so only 127.0.0.1 can call APIs, to fix it bind to 0.0.0.0, now you can use the public IP of the instance to call APIs https://pytorch.org/serve/configuration.html#configure-torchserve-listening-address-and-port 
+
+Links to an external site. for inference API
+You can use PyTest fixtures for command line arguments
+https://docs.pytest.org/en/7.1.x/how-to/parametrize.html
+
+
+
+Create TORCHSERVE.md
+ file in your logbook
+
+    Copy/Paste output of pytest test_serve to it
+    Attach Model Explanation Image to it
+    Add Inference metrics (curl output of metrics api)
+    Upload Tensorboard Profiler to tensorboard.dev 
+
+    Links to an external site. and add link of it (this might not work, so instead just upload screenshots of the profiling page)
+
+Submit link to TORCHSERVE.md
+Links to an external site. file from your Github Repository
+
 This branch contains the code for serving the model
 
 Steps Done

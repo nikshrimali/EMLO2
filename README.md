@@ -60,6 +60,8 @@ Steps Done
 - Deploy your model using the below command
     - ```torchserve --start --model-store model_store --models cifar=cifar_resnet.mar```
 
+- You can also set some properties for torchserve and pass it using the below command
+    - ```torchserve --start --model-store model_store --models cifar=cifar_resnet.mar --ts-config config.properties```
 - Download serve from Git and install GRPC binaries via pip
     - ```git clone https://github.com/pytorch/serve```
     - ```cd serve```

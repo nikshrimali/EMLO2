@@ -15,17 +15,7 @@
 # https://docs.docker.com/compose/gettingstarted/#step-2-create-a-dockerfile
 # https://github.com/awslabs/amazon-sagemaker-examples/master/advanced_functionality/pytorch_extending_our_containers/pytorch_extending_our_containers.ipynb
 # SageMaker PyTorch image
-
-FROM 763104351884.dkr.ecr.ap-south-1.amazonaws.com/pytorch-training:1.12.1-cpu-py38-ubuntu20.04-sagemaker
-# FROM 	763104351884.dkr.ecr.ap-south-2.amazonaws.com/sagemaker-pytorch:0.4.0-cpu-py3
-
-WORKDIR /opt/src
-
-COPY requirements.txt .
-
-RUN pip install -r requirements.txt \
-    
-    && rm -rf /root/.cache/pip
+FROM 520713654638.dkr.ecr.ap-south-1.amazonaws.com/sagemaker-pytorch:1.12.0-cpu-py3
 
 ENV PATH="/opt/ml/code:${PATH}"
 

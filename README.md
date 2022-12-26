@@ -1,8 +1,8 @@
-# Extensive MLOps Research EMLO
+# Sagemaker - Intel Image classification
 
-Please checkout branches for different codes
+Please checkout the respective notebooks for classification and deployment of sagemaker intel image classification project
 
-## Branches created yet
--   ass1 - Docker and timm models
-- 02-hydra-lightening - Using hydra template deployed Timm model for CIFAR10 dataset
-- 03-version-control - Version controlling of code, model and data
+List of notebooks
+- <a href='01-setup-git-dvc.ipynb'>01-setup-git-dev</a>
+- <a href='01-setup-git-dvc.ipynb'>02-data-preprocess</a>
+- <a href='01-setup-git-dvc.ipynb'>03-train</a>
